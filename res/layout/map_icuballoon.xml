@@ -1,0 +1,46 @@
+<unikys.icu.ICUMapBalloon xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/transparent_panel"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="5dp" >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/close_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:clickable="true"
+            android:contentDescription="@string/close"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+        <TextView
+            android:id="@+id/note_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/note" />
+        
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/note_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="160"
+        android:maxLines="4"
+        android:minLines="4"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/unikys_tistory_com"
+        android:textSize="5pt" />
+
+</unikys.icu.ICUMapBalloon>
